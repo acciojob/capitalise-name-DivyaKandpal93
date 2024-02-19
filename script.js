@@ -1,5 +1,5 @@
 //your JS code here. If required.
-function (){
+window.onload = function (){
 	const inputField = document.getElementById('fname');
 inputField.addEventListner(blur,function() {
 	let inputValue = inputField.value();
