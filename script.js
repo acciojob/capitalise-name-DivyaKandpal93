@@ -1,8 +1,9 @@
-//your JS code here. If required.
-window.onload = function (){
-	const inputField = document.getElementById('fname');
-inputField.addEventListner('blur',(e) => () {
-	let inputValue = e.target.value();
-	let result = inputValue.toUpperCase();
-	inputValue = result;
-})
+window.onload = function() {
+    
+    const inputField = document.getElementById('fname');
+    inputField.addEventListener('blur', function() {
+        let inputValue = inputField.value;
+        let uppercaseValue = inputValue.toUpperCase();
+        inputField.value = uppercaseValue;
+    });
+};
