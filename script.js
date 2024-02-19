@@ -2,7 +2,7 @@
 window.onload = function (){
 	const inputField = document.getElementById('fname');
 inputField.addEventListner('blur',(e) => () {
-	let inputValue = inputField.value();
+	let inputValue = e.target.value();
 	let result = inputValue.toUpperCase();
-	inputField.value() = result;
+	inputValue = result;
 })
