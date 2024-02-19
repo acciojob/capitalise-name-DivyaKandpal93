@@ -4,5 +4,5 @@ window.onload = function (){
 inputField.addEventListner(blur,function() {
 	let inputValue = inputField.value();
 	let result = inputValue.toUpperCase();
-	inputField.value() = result;
+	inputValue = result;
 })
